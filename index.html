@@ -41,10 +41,14 @@
             font-size: 20px;
         
         }
+
+        .bored {
+          border: 2px solid red;
+        }
     </style>
 </head>
-<body class="poppins sm:pl-5 sm:pr-5">
-    <header>
+<body class="poppins">
+    <header class="pl-5 pr-5 lg:pl-0 lg:pr-0">
         <!-- NAVBAR -->
         <nav class="container mx-auto">
             <div class="navbar bg-base-100">
@@ -144,7 +148,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="pl-5 pr-5 lg:pl-0 lg:pr-0">
         <!-- The Legal Practice Area -->
          <div class="container mx-auto mt-10 md:mt-40">
             <h2 class="mb-5 text-5xl font-bold garamond text-head-text text-center">The Legal Practice Area</h2>
@@ -323,9 +327,9 @@
         </p>
      </div>
 
-     <div class="container mx-auto mt-10 md:flex md:space-x-8">
+     <div class="container mx-auto mt-10 lg:flex lg:space-x-8">
 
-      <div class="w-full md:w-2/4 space-y-8">
+      <div class="w-full lg:w-2/4 space-y-8">
 
         <div class="collapse collapse-plus bg-[#F3F3F3] p-8 pr-12">
           <input type="radio" name="my-accordion-3" checked="checked" />
@@ -359,7 +363,7 @@
 
       </div>
 
-      <div class="w-full md:w-2/4 mt-10 md:mt-0 content-center">
+      <div class="w-full lg:w-2/4 mt-10 lg:mt-0 flex content-center justify-center">
         <img src="./assets/faq.png" alt="">
       </div>
      </div>
@@ -372,9 +376,9 @@
       </p>
     </div>
 
-    <div class="container mx-auto mt-10 md:flex md:space-x-8">
+    <div class="container mx-auto mt-10 lg:flex lg:space-x-8">
       
-      <div class="w-full md:w-2/4 gap-5 md:gap-0 grid grid-cols-1 md:grid-cols-2">       
+      <div class="w-full lg:w-2/4 gap-5 lg:gap-0 grid grid-cols-1 lg:grid-cols-2">       
               
         <!-- box 1 -->
         <div class="w-full p-6 md:p-12 flex flex-col items-center border md:border-t-0 md:border-l-0 border-border bg-[#F3F3F3]">
@@ -434,7 +438,7 @@
 
       </div>
 
-      <div class="w-full md:w-2/4 space-y-4 flex flex-col text-xl mt-10 md:mt-0">
+      <div class="w-full lg:w-2/4 space-y-4 flex flex-col text-xl mt-12 lg:mt-0">
 
       <input type="text" placeholder="Your Name" class="input w-full h-20 placeholder bg-[#F3F3F3]"/>
       <input type="text" placeholder="Your Email" class="input w-full h-20 placeholder bg-[#F3F3F3]"/>
@@ -448,58 +452,55 @@
 
     </main>
 
-    <footer class="bg-[#111111] text-[#CFCFCF] p-10 mt-10 md:mt-20" >
+    <footer class="bg-[#111111] text-[#CFCFCF] pt-24 pb-24 mt-10 md:mt-20" >
 
-      <div class="container mx-auto grid sm:grid-cols-1 sm:space-y-10 grid-cols-4 space-x-4">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 p-5">
       
-        <div class="w-1/4">
+        <div>
           <img src="./assets/logo-foot.png" alt="">
           <p class="mt-8">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
           </p>
         </div>
 
+        <nav class=" flex flex-col mt-0 sm:mt-4">
+          <h6 class="text-2xl font-bold garamond">Usefull Link</h6>
+          <a class="link link-hover mt-5 md:mt-10">Homes</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Cases</a>
+          <a class="link link-hover">Blog</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
 
 
+        <nav class="flex flex-col mt-0 sm:mt-4">
+          <h6 class="text-2xl font-bold garamond">Contact Now</h6>
+          <p class="mt-5 md:mt-10">555 4th 5t NW, Washington <br>
+            DC 20530, United States</p>
+          <p class="mt-2 md:mt-5">+88 01750 000 000 <br>
+            +88 01750 000 000</p>
+          <p class="mt-2 md:mt-5">info@gmail.com <br>
+            info@gmail.com</p>
+        </nav>
 
-      <nav class="w-1/4 flex flex-col leading-10 lg:pl-20">
-        <h6 class="text-2xl font-bold garamond">Usefull Link</h6>
-        <a class="link link-hover mt-10">Homes</a>
-        <a class="link link-hover">About Us</a>
-        <a class="link link-hover">Cases</a>
-        <a class="link link-hover">Blog</a>
-        <a class="link link-hover">Contact Us</a>
-      </nav>
+        <form class="mt-0 sm:mt-4">
+          <h6 class="text-2xl font-bold garamond">Newsletter</h6>
+          <fieldset class="form-control w-full">
+            <label class="label md:mt-7">
+              <span class="">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</span>
+            </label>
+            <div class="join md:mt-5">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="input input-bordered join-item input w-full bg-[#F3F3F3]" />
+                
+              <button class="btn border-0 join-item bg-primary-color text-white"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+          </fieldset>
+        </form>
 
-
-      <nav class="w-1/4 flex flex-col">
-        <h6 class="text-2xl font-bold garamond">Contact Now</h6>
-        <p class="mt-10">555 4th 5t NW, Washington <br>
-          DC 20530, United States</p>
-        <p class="mt-5">+88 01750 000 000 <br>
-          +88 01750 000 000</p>
-        <p class="mt-5">info@gmail.com <br>
-          info@gmail.com</p>
-      </nav>
-
-      <form class="w-1/4">
-        <h6 class="text-2xl font-bold garamond">Newsletter</h6>
-        <fieldset class="form-control w-full">
-          <label class="label mt-7">
-            <span class="">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</span>
-          </label>
-          <div class="join mt-5">
-            <input
-              type="text"
-              placeholder="Email Address"
-              class="input input-bordered join-item input w-full bg-[#F3F3F3]" />
-              
-            <button class="btn border-0 join-item bg-primary-color text-white"><i class="fa-regular fa-paper-plane"></i></button>
-          </div>
-        </fieldset>
-      </form>
-
-    </div>
+      </div>
 
     </footer>
 
